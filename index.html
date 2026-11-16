@@ -4257,22 +4257,35 @@ document.addEventListener("DOMContentLoaded", function() {
             yeniOzet.textContent = "CTO girişimlerinde rasyonel hasta seçimi, stratejik esneklik, güncel kanıtlar ve işlem güvenliği üzerine klinik değerlendirme.";
         }
 
-        var elemanlar = yeniKart.querySelectorAll("span, div, time, small");
+        var elemanlar = yeniKart.querySelectorAll("span, div, time, small, a, button");
         for (var j = 0; j < elemanlar.length; j++) {
             if (elemanlar[j].children.length === 0 && elemanlar[j].textContent.indexOf("Ekim 2026") !== -1) {
                 elemanlar[j].textContent = elemanlar[j].textContent.replace("Ekim 2026", "16 Kasım 2026");
             }
         }
 
-        var link = yeniKart.tagName === "A" ? yeniKart : yeniKart.querySelector("a");
-        if (link) {
-            link.setAttribute("href", "cto.html");
+        var linkler = yeniKart.querySelectorAll("a, button");
+        for (var k = 0; k < linkler.length; k++) {
+            if (linkler[k].tagName === "A") {
+                linkler[k].setAttribute("href", "cto.html");
+            }
+            linkler[k].removeAttribute("data-modal");
+            linkler[k].removeAttribute("data-target");
+            linkler[k].removeAttribute("onclick");
         }
+
+        yeniKart.style.cursor = "pointer";
+        yeniKart.addEventListener("click", function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            window.location.href = "cto.html";
+        }, true);
 
         ilkKart.parentNode.insertBefore(yeniKart, ilkKart);
     }
 });
 </script>
+
 
   
 
