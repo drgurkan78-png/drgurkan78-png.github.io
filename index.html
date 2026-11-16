@@ -4231,13 +4231,50 @@
     })();
     </script>
 
-<div style="max-width: 850px; margin: 40px auto; padding: 24px; background-color: #111827; border: 1px solid #374151; border-radius: 16px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; font-family: sans-serif; box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
-    <div style="flex: 1; min-width: 260px;">
-        <div style="color: #a855f7; font-size: 13px; font-family: monospace; margin-bottom: 6px;">Klinik Notlar • 16 Kasım 2026</div>
-        <h3 style="color: #ffffff; font-size: 18px; font-weight: 700; margin: 0; line-height: 1.4;">Kronik Total Oklüzyon Girişimlerinde Güncel Yaklaşım: Hasta Seçimi, Strateji ve Güvenlik</h3>
-    </div>
-    <a href="cto.html" style="background: linear-gradient(135deg, #7c3aed, #0891b2); color: #ffffff; padding: 12px 24px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 14px; white-space: nowrap; display: inline-block;">Makaleyi Oku &rarr;</a>
-</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var basliklar = document.querySelectorAll("h2, h3, h4");
+    var ilkKart = null;
+
+    for (var i = 0; i < basliklar.length; i++) {
+        if (basliklar[i].textContent.indexOf("CTO nedir?") !== -1) {
+            ilkKart = basliklar[i].closest("article") || basliklar[i].closest("a") || basliklar[i].parentElement.parentElement;
+            break;
+        }
+    }
+
+    if (ilkKart) {
+        var yeniKart = ilkKart.cloneNode(true);
+
+        var yeniBaslik = yeniKart.querySelector("h2, h3, h4");
+        if (yeniBaslik) {
+            yeniBaslik.textContent = "Kronik Total Oklüzyon Girişimlerinde Güncel Yaklaşım: Hasta Seçimi, Strateji ve Güvenlik";
+        }
+
+        var yeniOzet = yeniKart.querySelector("p");
+        if (yeniOzet) {
+            yeniOzet.textContent = "CTO girişimlerinde rasyonel hasta seçimi, stratejik esneklik, güncel kanıtlar ve işlem güvenliği üzerine klinik değerlendirme.";
+        }
+
+        var elemanlar = yeniKart.querySelectorAll("span, div, time, small");
+        for (var j = 0; j < elemanlar.length; j++) {
+            if (elemanlar[j].children.length === 0 && elemanlar[j].textContent.indexOf("Ekim 2026") !== -1) {
+                elemanlar[j].textContent = elemanlar[j].textContent.replace("Ekim 2026", "16 Kasım 2026");
+            }
+        }
+
+        var link = yeniKart.tagName === "A" ? yeniKart : yeniKart.querySelector("a");
+        if (link) {
+            link.setAttribute("href", "cto.html");
+        }
+
+        ilkKart.parentNode.insertBefore(yeniKart, ilkKart);
+    }
+});
+</script>
+
+  
 
 </body>
 </html>
