@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kronik Total Oklüzyon Girişimlerinde Güncel Yaklaşım</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: 'rgba(17, 24, 39, 0.7)',
+                        accentPrimary: '#8b5cf6',
+                        accentSecondary: '#06b6d4',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-space { font-family: 'Space Grotesk', sans-serif; }
+        .glass-panel {
+            background: rgba(17, 24, 39, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-100 antialiased selection:bg-purple-500 selection:text-white">
+
+    <!-- Üst Menü / Geri Dön Butonu -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-xl font-bold font-space tracking-wider bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">&larr; Ana Sayfaya Dön</a>
+        </div>
+    </header>
+
+    <!-- Makale İçeriği (Buraya bir önceki adımda verdiğimiz <article> kodunu yapıştırın) -->
+    <article class="py-32 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Makale Başlığı ve Meta -->
+        <header class="mb-12 border-b border-gray-800 pb-8">
+            <div class="flex items-center space-x-3 text-xs text-purple-400 mb-4 font-mono">
+                <span>16 Kasım 2026</span>
+                <span>•</span>
+                <span>Klinik Notlar</span>
+                <span>•</span>
+                <span>6 dk okuma</span>
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-bold font-space tracking-tight leading-tight mb-6">
+                Kronik Total Oklüzyon Girişimlerinde Güncel Yaklaşım: Hasta Seçimi, Strateji ve Güvenlik
+            </h1>
+            <p class="text-gray-400 text-lg font-light leading-relaxed">
+                Kronik total oklüzyonlarda (CTO) perkütan koroner girişim, güncel teknolojik ve kanıt temelli gelişmelerle dönüşüm geçirirken; klinik karar sürecinin merkezinde rasyonel hasta seçimi ve stratejik esneklik yer alıyor.
+            </p>
+        </header>
+
+        <!-- İçerik Gövdesi -->
+        <div class="space-y-8 text-gray-300 leading-relaxed text-base sm:text-lg">
+            <p>
+                Kronik total oklüzyonlarda (CTO) perkütan koroner girişim, gelişen tel ve mikrokateter teknolojileri, intravasküler görüntüleme ve farklı geçiş teknikleri sayesinde önemli bir dönüşüm geçirdi. Bununla birlikte, teknik olarak açılabilir bir damar ile açılması hastaya anlamlı yarar sağlayacak bir damar arasındaki ayrım, karar sürecinin merkezinde kalmalıdır.
+            </p>
+            <p>
+                CTO girişiminde temel soru, <span class="text-purple-300 font-medium">“Bu lezyonu hangi telle geçebilirim?”</span> sorusundan önce gelir: <span class="text-purple-300 font-medium">“Bu hastada revaskülarizasyonun klinik hedefi nedir?”</span>
+            </p>
+
+            <h2 class="text-2xl font-bold font-space text-white pt-6 border-t border-gray-800/80">Hasta Seçimi: Anjiyografik Görüntünün Ötesine Geçmek</h2>
+            <p>
+                CTO, genellikle en az üç aydır mevcut olduğu bilinen veya düşünülen, oklüzyon boyunca antegrad akımın bulunmadığı koroner lezyonu ifade eder. Revaskülarizasyon kararı; semptom yükü, tolere edilen medikal tedavi, iskemi ve gerektiğinde canlılık değerlendirmesi, sol ventrikül fonksiyonu, komorbiditeler ve hastanın tercihleri birlikte ele alınarak verilmelidir.
+            </p>
+            <p>
+                Semptom değerlendirmesi yalnız anginayla sınırlanmamalıdır. Efor dispnesi, günlük aktivitede azalma ve hastanın zaman içinde fiziksel kapasitesini kısıtlayarak yakınmalarına uyum sağlaması da sorgulanmalıdır. Çok damar hastalığında ise CTO, bütüncül revaskülarizasyon planının bir parçası olarak değerlendirilmelidir <sup class="text-purple-400">[1]</sup>.
+            </p>
+
+            <h2 class="text-2xl font-bold font-space text-white pt-6 border-t border-gray-800/80">Kanıtlar Bize Ne Söylüyor?</h2>
+            <p>
+                CTO-PCI için en güçlü klinik gerekçe, uygun seçilmiş hastalarda semptomların ve yaşam kalitesinin iyileştirilmesidir. 2026’da yayımlanan, 50 hastalık plasebo kontrollü ORBITA-CTO çalışması; semptomatik tek damar CTO hastalarında girişimin anginayı plasebonun ötesinde azalttığını gösterdi. Ancak bu küçük ve seçilmiş popülasyondan elde edilen sonuçlar, bütün CTO hastalarına veya sağkalım yararına genellenmemelidir <sup class="text-purple-400">[2]</sup>.
+            </p>
+            <p>
+                DECISION-CTO’nun 10 yıllık sonuçlarında ise başlangıç CTO-PCI stratejisi ile CTO-PCI yapılmayan strateji arasında primer birleşik sonlanım veya tüm nedenlere bağlı mortalite bakımından anlamlı fark gösterilmedi. Geniş güven aralıkları da dikkate alındığında, rutin sağkalım yararının kanıtlandığını söylemek mümkün değildir <sup class="text-purple-400">[3]</sup>.
+            </p>
+            <p>
+                Bu nedenle hastayla görüşmede beklenen semptomatik yarar, işlemin riski ve prognostik belirsizlik ayrı ayrı anlatılmalıdır.
+            </p>
+
+            <h2 class="text-2xl font-bold font-space text-white pt-6 border-t border-gray-800/80">Stratejiyi Tel Gramajı Değil, Anatomi Belirler</h2>
+            <p>
+                Global CTO Crossing Algorithm, tek bir geçiş tekniğinde ısrar etmek yerine anatomik değerlendirme ve gerektiğinde strateji değişimini esas alır. Proksimal kapın netliği, oklüzyonun seyri ve yapısı, distal hedefin kalitesi, önemli yan dallar ve kullanılabilir kollateraller başlangıç planını şekillendirir <sup class="text-purple-400">[4]</sup>.
+            </p>
+            <p>
+                Antegrad tel geçişi, antegrad diseksiyon–re-entry, retrograd tel geçişi ve retrograd diseksiyon–re-entry, uygun anatomide değerlendirilen farklı araçlardır. Uzun bir CTO otomatik olarak diseksiyon–re-entry; belirsiz proksimal kap da otomatik olarak retrograd yaklaşım anlamına gelmez.
+            </p>
+            <p>
+                Belirsiz kapta daha fazla penetrasyon gücü kullanmak, anatomik belirsizliği çözmez. Uygun projeksiyonlar, çift enjeksiyon, seçilmiş olgularda koroner BT anjiyografi ve IVUS, güvenli giriş yolunun belirlenmesine katkı sağlar.
+            </p>
+
+            <h2 class="text-2xl font-bold font-space text-white pt-6 border-t border-gray-800/80">İlerleme Durduğunda Önce Sorunu Tanımlamak</h2>
+            <p>
+                Sonuçsuz bir tel denemesi sonrasında yalnızca daha sert tele geçmek, sorunun mekanizmasını gözden kaçırabilir. İlerlemeyi sınırlayan neden; penetrasyon yetersizliği, yönlendirme sorunu, destek eksikliği veya istenmeyen doku planında ilerleme olabilir.
+            </p>
+            
+            <div class="glass-panel p-6 rounded-2xl border border-purple-500/30 my-6">
+                <h3 class="text-lg font-bold font-space text-purple-300 mb-3">Pratikte karar disiplinini güçlendiren dört soru:</h3>
+                <ul class="space-y-2 text-sm text-gray-300 list-disc list-inside">
+                    <li>Yeni anatomik bilgi elde ettik mi?</li>
+                    <li>Hedefe doğru gerçek ilerleme oldu mu?</li>
+                    <li>Güvenli ve uygulanabilir bir alternatifimiz var mı?</li>
+                    <li>Hastanın durumu ve kalan işlem bütçesi devam etmeyi destekliyor mu?</li>
+                </ul>
+            </div>
+
+            <p>
+                Bu yaklaşım, tel seçimini ürün sıralamasından çıkarıp amaca yönelik bir karara dönüştürür.
+            </p>
+
+            <h2 class="text-2xl font-bold font-space text-white pt-6 border-t border-gray-800/80">Telin Geçmesi, İşlemin Tamamlandığı Anlamına Gelmez</h2>
+            <p>
+                Geçiş sonrasında cihazın ilerleyememesi ile balonun ilerleyip lezyonu genişletememesi farklı problemlerdir. <span class="text-cyan-300 font-medium">“Uncrossable”</span> ve <span class="text-cyan-300 font-medium">“undilatable”</span> ayrımı; destek yöntemleri, düşük profilli cihazlar ve kalsiyum modifikasyonu seçeneklerinin seçiminde belirleyicidir.
+            </p>
+            <p>
+                Ayrıca distal tel ucunun gerçek lümende bulunması, oklüzyon boyunca bütün tel yolunun intraplak olduğunu kanıtlamaz. Doku planı ve kalsiyum dağılımı, özellikle aterektomi veya diğer hazırlık yöntemleri öncesinde önem taşır. SCAI uzlaşısı da CTO’da lezyon hazırlığını geçiş planı ve cihaz geçebilirliği üzerinden ele alır <sup class="text-purple-400">[5]</sup>.
+            </p>
+
+            <h2 class="text-2xl font-bold font-space text-white pt-6 border-t border-gray-800/80">Güvenlik, Kurtarma Hazırlığıyla Başlar</h2>
+            <p>
+                Komplikasyon yönetimi, komplikasyon geliştikten sonra hazırlanacak bir plan değildir. Perforasyon, tamponad, donör damar hasarı ve cihaz sıkışması için ekipman, görev dağılımı ve yardım çağrı yolları işlem öncesinde belirlenmelidir <sup class="text-purple-400">[6]</sup>.
+            </p>
+            <p>
+                Bir cihazın stokta bulunması da tek başına uygulama kapasitesi oluşturmaz. Uyumlu kateter ve sarflar, ekip yetkinliği ve kurtarma hazırlığı birlikte değerlendirilmelidir.
+            </p>
+
+            <p class="font-medium text-white bg-gray-900/50 p-6 rounded-2xl border border-gray-800">
+                Benim CTO girişimlerine yaklaşımımda başarı; yalnız oklüzyonun geçilmesi veya stentin yerleştirilmesiyle tanımlanmaz. Doğru hastada anlamlı klinik yarar sağlamak, yan dalları ve donör damarı korumak, yeterli lezyon hazırlığı ve stent optimizasyonunu gerçekleştirmek ve gerektiğinde güvenle durabilmek, aynı karar sürecinin parçalarıdır.
+            </p>
+        </div>
+
+        <!-- Kaynaklar Bölümü -->
+        <footer class="mt-16 pt-8 border-t border-gray-800">
+            <h3 class="text-lg font-bold font-space mb-4 text-gray-300">Kaynaklar</h3>
+            <ol class="space-y-2 text-xs sm:text-sm text-gray-400 font-mono">
+                <li>[1] Galassi AR ve ark. EAPCI/EACVI/ESC CTO değerlendirme uzlaşısı. <i>EuroIntervention</i>. 2024. <a href="https://doi.org/10.4244/EIJ-D-23-00749" target="_blank" class="text-purple-400 hover:underline">doi:10.4244/EIJ-D-23-00749</a></li>
+                <li>[2] ORBITA-CTO. Randomized, Placebo-Controlled Trial of Chronic Total Occlusion Percutaneous Coronary Intervention in Stable Angina. 2026. <a href="https://pubmed.ncbi.nlm.nih.gov/41999379/" target="_blank" class="text-purple-400 hover:underline">PubMed</a></li>
+                <li>[3] DECISION-CTO. 10-Year Outcomes of Initial CTO-PCI Versus No CTO-PCI Strategies. 2026. <a href="https://doi.org/10.1016/j.jacc.2026.10.068" target="_blank" class="text-purple-400 hover:underline">doi:10.1016/j.jacc.2026.10.068</a></li>
+                <li>[4] Brilakis ve ark. Insights into the Global Total Occlusion Crossing Algorithm. 2025. <a href="https://doi.org/10.15420/icr.2024.05" target="_blank" class="text-purple-400 hover:underline">doi:10.15420/icr.2024.05</a></li>
+                <li>[5] SCAI Expert Consensus Statement on the Management of Calcified Coronary Lesions. 2024. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11307856/" target="_blank" class="text-purple-400 hover:underline">Tam metin</a></li>
+                <li>[6] Wu EB ve ark. Global Consensus Recommendations on Improving the Safety of Chronic Total Occlusion Interventions. 2024. <a href="https://doi.org/10.1016/j.hlc.2023.11.030" target="_blank" class="text-purple-400 hover:underline">doi:10.1016/j.hlc.2023.11.030</a></li>
+            </ol>
+        </footer>
+    </article>
+
+</body>
+</html>
